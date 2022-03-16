@@ -28,3 +28,8 @@ insert into Addressbook values
 ('ila','jha','Gujrat','Varodara','456218','785123654','ila@gmail.com')
 
 select * from Addressbook
+
+--UC4 edit a contact
+
+update Addressbook set Firstname='Dileep',Lastname='yadav'
+where Firstname='Neha'
