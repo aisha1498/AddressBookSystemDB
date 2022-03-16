@@ -30,6 +30,11 @@ insert into Addressbook values
 select * from Addressbook
 
 --UC4 edit a contact
-
 update Addressbook set Firstname='Dileep',Lastname='yadav'
 where Firstname='Neha'
+
+--UC5 delact a contact
+select * from Addressbook 
+delete from Addressbook where Firstname='ila'
+
+select * from Addressbook
