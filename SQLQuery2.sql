@@ -52,3 +52,14 @@ select * from Addressbook
  --uc8 Sort contact by firstname from city
  select * from Addressbook where City ='mumbai' order by Firstname
 
+ --UC9 Alter AddressBook table with type
+ alter table Addressbook add
+Type varchar(50)
+
+update Addressbook set Type='friend' where Firstname='Ashu'
+update Addressbook set Type='family' where Firstname='Neha'
+update Addressbook set Type='friend' where Firstname='pooja'
+update Addressbook set Type='friend' where Firstname='arnavi'
+update Addressbook set Type='family' where Firstname='ila'
+
+select * from Addressbook
