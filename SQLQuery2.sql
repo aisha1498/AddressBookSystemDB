@@ -11,6 +11,7 @@ Firstname varchar(60),
 Lastname varchar(50),
 Address varchar(150),
 City varchar(50),
+state varchar(50),
 Zipcode varchar(6),
 Phonenumber varchar(13),
 Email varchar(60)
@@ -38,3 +39,11 @@ select * from Addressbook
 delete from Addressbook where Firstname='ila'
 
 select * from Addressbook
+
+--UC6 Retrieve Person belonging to a City or State from the Address Book
+select * from Addressbook where City='Pune'
+
+select * from Addressbook where city ='Maharashtra'
+
+
+
