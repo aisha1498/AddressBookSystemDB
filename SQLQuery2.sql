@@ -67,3 +67,15 @@ select * from Addressbook
 
 --uc10 no of contact person count by type
 select count(*) Firstname from Addressbook where Type='family'
+
+--uc11 add person to both Friend and Family
+alter table Addressbook add
+otherType varchar(50)
+
+update Addressbook set otherType='cousin' where Firstname='Ashu'
+update Addressbook set otherType='friend' where Firstname='Neha'
+update Addressbook set otherType='colleague' where Firstname='pooja'
+update Addressbook set otherType='colleague' where Firstname='arnavi'
+update Addressbook set otherType='friend' where Firstname='ila'
+
+select * from Addressbook
